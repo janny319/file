@@ -1,0 +1,19 @@
+.nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: var.$color-white;
+        cursor: pointer;
+        & + li{
+            margin-left: 2rem;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+// - box style
+@mixin box-outline($lineColor){
+    width: 100%;
+    height: auto;
+    background-color: var.$color-white;
+    border: 1px solid $lineColor;
+    border-radius: 0.6rem;
+    padding: 2rem;
+}
