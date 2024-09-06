@@ -1,8 +1,8 @@
 .nav{
     position: absolute;
-    top: 50%;
+    top:50%;
     transform: translateY(-50%);
-    right: 3rem;
+    right: 4rem;
     &__list{
         display: flex;
         align-items: center;
@@ -10,8 +10,8 @@
     &__item{
         font-size: 1.8rem;
         font-weight: 300;
-        color: var.$color-white;
-        cursor: pointer;
+        text-transform: uppercase;
+        color: var.$color-primary;
         & + li{
             margin-left: 2rem;
         }

@@ -23,7 +23,8 @@
 
 html,
 body {
-    min-width: 1820px;
+    width: 100%;
+    min-width: 1080px;
     height: 100%;
 }
 body {
@@ -32,6 +33,7 @@ body {
     font-family: 'Pretendard', 'malgun',
         'Apple SD Gothic Neo', '돋움', Dotum;
     font-weight: var.$font-weight-regular;
+    background-color: var.$color-primary200;
 }
 
 img,
@@ -40,7 +42,6 @@ video,
 canvas,
 svg {
     display: block;
-    // max-width: 100%;
 }
 
 button {
@@ -90,7 +91,7 @@ textarea {
     appearance: none; /* 브라우저의 기본 스타일을 제거합니다. */
     border: none; /* 테두리를 제거합니다. */
     outline: none; /* 외곽선을 제거합니다. */
-    background-color: var.$color-white; /* 배경색을 투명하게 설정합니다. */
+    background-color: var.$color-white;
     margin: 0; /* 마진을 제거합니다. */
     padding: 0; /* 안쪽 여백을 제거합니다. */
     font-family: inherit; /* 폰트 패밀리를 상위 요소로부터 상속받습니다. */
@@ -120,11 +121,11 @@ input:autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 textarea {
-    resize: none; /* textarea의 크기 조절 기능을 비활성화합니다. */
+    resize: none;
 }
 input,
 textarea {
-    caret-color: var.$color-grayBase; /* 텍스트 커서의 색상을 빨간색으로 설정합니다. */
+    caret-color: var.$color-grayBase;
     &::placeholder{
         color: var.$color-gray500;
     }
@@ -134,19 +135,19 @@ textarea {
 
 }
 * {
-    // scrollbar-width: none !important;
+    scrollbar-width: none !important;
     -ms-overflow-style: none !important;
     box-sizing: border-box;
   }
 
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: #d3d3d3;
     border-radius: 16px;
     background-clip: padding-box;
-    border:5px solid transparent;
+    border:2px solid transparent;
   }
   ::-webkit-scrollbar-track {
     background-color: transparent;

@@ -6,6 +6,10 @@
 @import 'base/reset';
 @import 'base/fonts';
 
-@import 'header';
-@import 'layout';
-@import 'nav';
+@import 'layout/header';
+@import 'layout/layout';
+@import 'layout/nav';
+
+@import 'page/profile';
+@import 'page/mainGate';
+@import 'page/portfolio';

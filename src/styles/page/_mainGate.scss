@@ -1,0 +1,23 @@
+.gate{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+    padding: 2rem;
+    h1{
+        font-size: 10rem;
+        font-weight: 800;
+        color: var.$color-gray800;
+    }
+    p{
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 5.2rem;
+        color: var.$color-gray500;
+        margin-top: 6rem;
+    }
+}

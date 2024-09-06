@@ -1,0 +1,82 @@
+.profile{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var.$color-primary;
+    &__box{
+        width: calc(100% - 80rem);
+        height: 90%;
+        margin-left: 20rem;
+        overflow-y: auto;
+    }
+    &__img{
+        width: fit-content;
+        height: 60rem;
+        overflow: hidden;
+    }
+    &__introduction{
+        width: 100%;
+        margin-bottom: 5rem;
+        &__title{
+            width:100%;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        &__text{
+            width: 100%;
+            font-size: 2.1rem;
+            line-height: 2.8rem;
+            padding: 1rem 0;
+        }
+    }
+    &__history{
+        width: 100%;
+        padding: 2rem;
+        h2{
+            width: 100%;
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        &__item{
+            width:100%;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            dt{
+                width: 20rem;
+                font-weight: 300;
+                color: var.$color-gray800;
+                margin-right: 2rem;
+                padding-left: 2rem;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    display: inline-block;
+                    border-radius: 50%;
+                    background-color: var.$color-gray600;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 1rem;
+                }
+            }
+            dd{
+                font-weight: 500;
+                color: var.$color-gray800;
+                em{
+                    font-size: 1.6rem;
+                    padding-left: 0.8rem;
+                }
+            }
+            & + dl{
+                margin-top:2.1rem;
+            }
+        }
+    }
+}

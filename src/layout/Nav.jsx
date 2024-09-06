@@ -1,11 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { menuItems } from 'layout/Layout';
 
 const Nav = () => {
     return(
         <div className="nav">
             <ul className="nav__list">
-                <li className="nav__item">Profile</li>
-                <li className="nav__item">Portfolio</li>
+                {menuItems.map((item, index) => (
+                    <li className="nav__item" key={index}>
+                        <Link to={item.link}>
+                            {item.name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </div>
     )
