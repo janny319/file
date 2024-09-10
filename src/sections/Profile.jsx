@@ -1,4 +1,5 @@
 import tbdProfileIMG from "assets/images/img/img_tbd_01.jpg"
+import historyData from "dataJson/historyData.json"
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -58,76 +59,15 @@ const Profile = () => {
             </div>
             <div className="profile__history">
                 <h2>경력 - 13년 1개월</h2>
-                <dl className="profile__history__item">
-                    <dt>2024.03 ~ 재직중</dt>
-                    <dd>
-                        (주)프레임아웃
-                        <em>퍼블리싱1파트_파트장</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2022.07 ~ 2023.11</dt>
-                    <dd>
-                        주식회사 캐플릭스
-                        <em>프론트엔드팀_매니져</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2018.09 ~ 2022.07</dt>
-                    <dd>
-                        주식회사 다름
-                        <em>퍼블리싱팀_팀장</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2015.08 ~ 2016.08</dt>
-                    <dd>
-                        (주)에프지아이
-                        <em>퍼블리싱팀_과장</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2015.02 ~ 2015.07</dt>
-                    <dd>
-                        윤커뮤니케이션즈
-                        <em>퍼블리싱 계약직</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2013.02 ~ 2015.02</dt>
-                    <dd>
-                        케이아이티벨리(주)
-                        <em>개발사업부_대리</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2010.11 ~ 2013.01</dt>
-                    <dd>
-                        대교 CNS
-                        <em>개발팀_사원</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2010.08 ~ 2010.11</dt>
-                    <dd>
-                        주식회사조이플레닛
-                        <em>퍼블리싱_사원</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2010.06 ~ 2010.08</dt>
-                    <dd>
-                        한국통신돔닷컴(주)
-                        <em>디자인팀_사원</em>
-                    </dd>
-                </dl>
-                <dl className="profile__history__item">
-                    <dt>2009.05 ~ 2010.06</dt>
-                    <dd>
-                        (주)키스코
-                        <em>디자인팀_주임</em>
-                    </dd>
-                </dl>
+                {historyData.map((item) => (
+                    <dl key={item.id} className="profile__history__item">
+                        <dt>{item.date}</dt>
+                        <dd>
+                            {item.company}
+                            <em>{item.position}</em>
+                        </dd>
+                    </dl>
+                ))}
             </div>
         </div>
     </div>

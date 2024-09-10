@@ -1,44 +1,40 @@
-import React, { useRef} from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import portfolioData from "dataJson/portfolioData.json";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react"
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
-    const list = useRef()
+    const list = useRef();
 
-    useGSAP(() => {
-        const items = gsap.utils.toArray('.portfolid-box__item');
+    useLayoutEffect(() => {
+        const items = gsap.utils.toArray('.portfolio-box__item');
 
-        items.forEach((item) => {
-            gsap.to(item, {
-                x: 150,
-                scrollTrigger: {
-                  trigger: item,
-                  start: 'bottom bottom',
-                  end: 'top 20%',
-                  scrub: true,
-                  // markers: true,
+        items.forEach((item, index) => {
+            gsap.fromTo(item,
+                {
+                    y: 150,
+                    opacity: 0
                 },
-              });
-            // gsap.fromTo(
-            //     item,
-            //     { opacity:0, y: 50 },
-            //     { opacity: 1, y: 0, duration: 0.5,
-            //         scrollTrigger: {
-            //             trigger: item,
-            //             start: 'top 80%',
-            //             end: 'top 50%',
-            //         }
-            //     },
-            // )
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: list.current,
+                        start: 'top 60%',
+                        end: 'bottom 70%',
+                        toggleActions: 'play reverse play reverse',
+                        scrub: 2,
+                        markers: true,
+                    }
+                }
+            );
         });
-    },
-    {scope: list}
-);
+    }, []);
 
-    return(
+    return (
         <div className="portfolio">
             <div className="portfolio-box">
                 <ul className="portfolio-box__list" ref={list}>
@@ -58,7 +54,7 @@ const Portfolio = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Portfolio;
