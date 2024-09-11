@@ -59,7 +59,7 @@ const Profile = () => {
             </div>
             <div className="profile__history">
                 <h2>경력 - 13년 1개월</h2>
-                {historyData.map((item) => (
+                {[...historyData].reverse().map((item) => (
                     <dl key={item.id} className="profile__history__item">
                         <dt>{item.date}</dt>
                         <dd>

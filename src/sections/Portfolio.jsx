@@ -27,7 +27,6 @@ const Portfolio = () => {
                         end: 'bottom 70%',
                         toggleActions: 'play reverse play reverse',
                         scrub: 2,
-                        markers: true,
                     }
                 }
             );
@@ -38,7 +37,7 @@ const Portfolio = () => {
         <div className="portfolio">
             <div className="portfolio-box">
                 <ul className="portfolio-box__list" ref={list}>
-                    {portfolioData.map((item) => (
+                    {[...portfolioData].reverse().map((item) => (
                         <li key={item.id} className="portfolio-box__item">
                             <a href="#none">
                                 <div className="portfolio-box__item__thumbnail">
