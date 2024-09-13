@@ -1,7 +1,7 @@
 {
   "name": "janny-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://janny319.github.io/file/",
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,7 +17,6 @@
     "sass-loader": "^16.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://janny319.github.io/file/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

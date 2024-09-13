@@ -1,18 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import Layout from "layout/Layout";
 
 import 'styles/style.scss'
 
 function App() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Router>
+        <Router>
+            <Switch>
                 <Routes>
                     <Route path='/' element={<Layout />}></Route>
                 </Routes>
-            </Router>
-        </BrowserRouter>
+            </Switch>
+        </Router>
     );
 }
 
