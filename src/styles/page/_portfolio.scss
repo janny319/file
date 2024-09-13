@@ -10,6 +10,12 @@
         height: 100%;
         overflow-y: scroll;
         padding: 2rem;
+        h3{
+            width: 100%;
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
         &__list{
             width:100%;
             dt{
@@ -25,7 +31,7 @@
                 }
             }
             & + dl{
-                margin-top: 1.5rem;
+                margin-top: 2.5rem;
             }
         }
     }
@@ -33,23 +39,21 @@
         width: 60%;
         height: 100%;
         overflow-y: scroll;
-        padding: 2rem 2rem 0 2rem;
+        padding: 3.5rem;
         border-radius: 0.8rem;
         border: 1px solid var.$color-primary;
         &__list{
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
-            margin-left: -2rem;
         }
         &__item{
             width: 100%;
             height: max-content;
-            padding: 0 0 2rem 2rem;
             display: block;
             a{
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
             }
             &__thumbnail{
                 width: 35%;
@@ -61,14 +65,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-right: 5%;
+                margin-right: 2%;
                 img{
                     width: 100%;
                     height: auto;
                 }
             }
             &__text{
-                width: 60%;
+                width: 63%;
                 display:flex;
                 flex-wrap: wrap;
                 flex-direction: column;
@@ -97,6 +101,9 @@
                         left: 0.3rem;
                     }
                 }
+            }
+            & + li{
+                margin-top: 4rem;
             }
         }
     }

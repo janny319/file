@@ -27,7 +27,6 @@ const Portfolio = () => {
                         end: '55% 80%',
                         toggleActions: 'play reverse play reverse',
                         scrub: 2,
-                        markers: true,
                     }
                 }
             );
@@ -54,11 +53,13 @@ const Portfolio = () => {
                 </ul>
             </div>
             <div className="portfolio-career">
+                <h3>내가 해온 일들</h3>
                 <dl className="portfolio-career__list">
                     <dt>2024년</dt>
                     <dd>인포뱅크 iTalk 구축 - react(PL)</dd>
                     <dd>인포뱅크 - AICC 고도화 - react(PL)</dd>
                     <dd>인포뱅크 - Bizgo 고도화 - HTML / Jquery(PL)</dd>
+                    <dd>개인포트폴리오 제작 - react / GSAP / scss</dd>
                 </dl>
                 <dl className="portfolio-career__list">
                     <dt>2023년</dt>

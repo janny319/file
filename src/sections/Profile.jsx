@@ -1,4 +1,4 @@
-import tbdProfileIMG from "assets/images/img/img_tbd_01.jpg"
+import myPhoto from "assets/images/img/img_me02.jpg"
 import historyData from "dataJson/historyData.json"
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -22,7 +22,7 @@ const Profile = () => {
     return(
     <div className="profile">
         <div className="profile__img">
-            <img src={tbdProfileIMG} alt="프로파일 이미지" />
+            <img src={myPhoto} alt="프로파일 이미지" />
         </div>
         <div className="profile__box">
             <div className="profile__introduction">

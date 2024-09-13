@@ -7,15 +7,21 @@
     align-items: center;
     background-color: var.$color-primary;
     &__box{
-        width: calc(100% - 80rem);
+        width: 50%;
         height: 90%;
-        margin-left: 20rem;
+        margin-left: 10rem;
         overflow-y: auto;
     }
     &__img{
-        width: fit-content;
+        width: 30%;
         height: 60rem;
         overflow: hidden;
+        border-radius: 1rem;
+        img{
+            width: auto;
+            height: 100%;
+            opacity: 0.85;
+        }
     }
     &__introduction{
         width: 100%;

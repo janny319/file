@@ -9,11 +9,11 @@ import { useGSAP } from '@gsap/react'
 export const menuItems = [
     {
         name: 'Profile',
-        link: '/profile', component: Profile,
+        link: 'profile'
     },
     {
         name: 'Portfolio',
-        link: '/portfolio', component: Portfolio,
+        link: 'portfolio'
     },
 ]
 
@@ -29,7 +29,7 @@ const Layout = () => {
         });
         tl.to(
             '.nav__item',
-            { color: 'transtions', duration: 0.5 }
+            { color: '#fff', duration: 0.5 }
         );
         tl.to(
             '.header',
@@ -37,13 +37,16 @@ const Layout = () => {
         );
     },[]);
 
-
     return (
         <div className="container">
             <Header />
             <MainGate />
-            <Profile />
-            <Portfolio />
+            <div id="profile">
+                <Profile />
+            </div>
+            <div id="portfolio">
+                <Portfolio />
+            </div>
         </div>
     )
 }
