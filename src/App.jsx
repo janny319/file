@@ -8,7 +8,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/file/' element={<Layout />}></Route>
+                <Route path='/' element={<Layout />}></Route>
             </Routes>
         </Router>
     );
