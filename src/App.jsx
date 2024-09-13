@@ -1,17 +1,17 @@
-import { HashRouter as Router, Routes, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "layout/Layout";
 
 import 'styles/style.scss'
 
 function App() {
     return (
-        <Router>
-            <Switch>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Router>
                 <Routes>
                     <Route path='/' element={<Layout />}></Route>
                 </Routes>
-            </Switch>
-        </Router>
+            </Router>
+        </BrowserRouter>
     );
 }
 
