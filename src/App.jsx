@@ -6,11 +6,11 @@ import 'styles/style.scss'
 
 function App() {
     return (
-            <Router>
-                <Routes>
-                    <Route path='/' element={<Layout />}></Route>
-                </Routes>
-            </Router>
+        <Router>
+            <Routes>
+                <Route path='/file/' element={<Layout />}></Route>
+            </Routes>
+        </Router>
     );
 }
 
