@@ -1,6 +1,7 @@
 {
   "name": "janny-portfolio",
   "version": "0.1.0",
+  "private": true,
   "homepage": "https://janny319.github.io/file/",
   "dependencies": {
     "@gsap/react": "^2.1.1",
