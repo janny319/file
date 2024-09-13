@@ -1,49 +1,49 @@
 [
     {
         "id": 1,
-        "thumbnail": "assets/images/img/img_tbd_02.jpg",
+        "thumbnail": "assets/images/img/img_tbd_02.JPG",
         "title": "슈프리마",
         "description": "jQuery / HTML / SEO적용 / 다국어",
         "link":"https://www.supremainc.com/ko/#n"
     },
     {
         "id": 2,
-        "thumbnail": "assets/images/img/img_tbd_08.jpg",
+        "thumbnail": "assets/images/img/img_tbd_08.JPG",
         "title": "KB 경영연구소",
         "description": "jQuery / HTML / SEO적용 / 반응형",
         "link":"https://www.kbfg.com/kbresearch/index.do"
     },
     {
         "id": 3,
-        "thumbnail": "assets/images/img/img_tbd_03.jpg",
+        "thumbnail": "assets/images/img/img_tbd_03.JPG",
         "title": "라온 시큐어",
         "description": "jQuery / HTML / SEO적용 / 반응형",
         "link":"https://www.raonsecure.com/ko/main"
     },
     {
         "id": 4,
-        "thumbnail": "assets/images/img/img_tbd_09.jpg",
+        "thumbnail": "assets/images/img/img_tbd_09.JPG",
         "title": "성주재단",
         "description": "jQuery / HTML / scss / 반응형 / 다국어",
         "link":"https://www.sungjoofoundation.com/"
     },
     {
         "id": 5,
-        "thumbnail": "assets/images/img/img_tbd_05.jpg",
+        "thumbnail": "assets/images/img/img_tbd_05.JPG",
         "title": "Tworld 웹/앱 리뉴얼",
         "description": "jQuery / HTML / scss / gulp / 접근성마크 / 하이브리드앱 / web",
         "link":"https://www.tworld.co.kr/web/home"
     },
     {
         "id": 6,
-        "thumbnail": "assets/images/img/img_tbd_06.jpg",
+        "thumbnail": "assets/images/img/img_tbd_06.JPG",
         "title": "T멤버십 웹/앱 리뉴얼",
         "description": "javascript / HTML / scss / gulp / 하이브리드앱 / web",
         "link":"https://sktmembership.tworld.co.kr/mps/pc-bff/sktmembership/main.do"
     },
     {
         "id": 7,
-        "thumbnail": "assets/images/img/img_tbd_07.jpg",
+        "thumbnail": "assets/images/img/img_tbd_07.JPG",
         "title": "제주패스_렌트카",
         "description": "vue / 적응형 / 하이브리드앱",
         "link":"https://rentcar.jejupass.com/web/rentcar"
